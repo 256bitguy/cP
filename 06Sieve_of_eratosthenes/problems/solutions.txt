@@ -1,0 +1,69 @@
+Here are the steps to solve each of the ten questions related to the Sieve of Eratosthenes:
+
+Basic Level:
+
+Find Primes Up to 50:
+
+Initialize a boolean array to represent prime numbers up to 50.
+Start with the first prime, 2.
+Iterate through the array and mark multiples of each prime number as non-prime.
+Print the numbers that are still marked as prime.
+Check Prime Using Sieve:
+
+Use the Sieve of Eratosthenes to generate prime numbers up to a limit that includes 'n.'
+Check if 'n' is present in the list of prime numbers.
+Find the 10th Prime Number:
+
+Use the Sieve of Eratosthenes to generate prime numbers.
+Keep counting the generated prime numbers until you reach the 10th prime.
+Trial Division for Primality Testing:
+
+Write a function that checks if 'n' is divisible by any number from 2 to the square root of 'n'.
+If 'n' is divisible by any number, it's not prime; otherwise, it's prime.
+Sum of Primes Up to 100:
+
+Use the Sieve of Eratosthenes to find prime numbers up to 100.
+Sum all the prime numbers in the list.
+Intermediate Level:
+
+Find Primes in a Range [m, n]:
+
+Modify the Sieve of Eratosthenes to work within a specified range [m, n].
+Use the modified sieve to find prime numbers within the range.
+Count Primes Up to a Limit:
+
+Use the Sieve of Eratosthenes to find prime numbers up to a given limit.
+Count the number of primes in the list.
+Find Largest Prime Under 1,000:
+
+Use the Sieve of Eratosthenes to find prime numbers up to 1,000.
+Print the largest prime number from the list.
+List Twin Prime Pairs:
+
+Use the Sieve of Eratosthenes to find prime numbers up to 500.
+Check for twin prime pairs (consecutive prime numbers with a difference of 2) in the list.
+Smallest Prime with 'k' Digits:
+
+Use the Sieve of Eratosthenes to find prime numbers.
+Continue generating prime numbers until you find one with 'k' digits.
+Advanced Level:
+
+Primes in Fibonacci Sequence:
+
+Generate the Fibonacci sequence using the Sieve of Eratosthenes.
+Identify prime numbers within the sequence up to the specified limit.
+Sieve with Segmented Sieving:
+
+Implement segmented sieving using the Sieve of Eratosthenes to find prime numbers in the range [m, n].
+Generate First 'n' Primes:
+
+Use the Sieve of Eratosthenes to generate a large list of prime numbers.
+Print the first 'n' primes from the list.
+Prime Factorization with Sieve:
+
+Use the Sieve of Eratosthenes to generate prime numbers.
+Implement prime factorization to find the prime factors of a given number.
+Optimized Sieve:
+
+Implement an optimized Sieve of Eratosthenes, such as the "wheel factorization" technique, to find prime numbers more efficiently.
+These steps should guide you through solving each of the questions related to the Sieve of Eratosthenes, from basic operations to more advanced techniques and optimizations.

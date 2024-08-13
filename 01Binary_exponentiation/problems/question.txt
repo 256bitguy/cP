@@ -1,0 +1,27 @@
+Here are 10 questions related to binary exponentiation, ranging from basic to more challenging. 
+These questions are designed to help you practice and deepen your understanding of the topic.
+
+Basic Questions:
+
+1.Calculate 2^6 using binary exponentiation.
+2.Compute 3^5 using the binary exponentiation technique.
+3.What is the result of 5^0 using binary exponentiation?
+4.Calculate 4^4 with the binary exponentiation method.
+5.Explain the binary exponentiation algorithm in your own words.
+
+Intermediate Questions:
+
+1.Write a C++ function for binary exponentiation that computes base^exponent. Test it with base = 7 and exponent = 12.
+2.Use binary exponentiation to find the last two digits of 7^777.
+3.How is modular exponentiation related to binary exponentiation, and why is it important in cryptography?
+4.Calculate 2^1000 using binary exponentiation. What is the last digit of the result?
+5.Given a large prime number p and an integer a, find a positive integer x such that a^x ≡ 1 (mod p) using binary exponentiation.
+
+Challenging Questions:
+
+1.Implement a binary exponentiation function for very large numbers (e.g., using a string or array to store the numbers). 
+Calculate 2^10000.
+2.Apply binary exponentiation to find the greatest common divisor (GCD) of two numbers a and b. Explain the approach.
+3.Investigate the time complexity of binary exponentiation for large exponents. How does it compare to the traditional exponentiation method?
+4.Explain how binary exponentiation can be used to solve the Fibonacci sequence in O(log n) time.
+5.Given a non-square matrix A, find the result of A^n (n is a positive integer) using binary exponentiation. Describe the algorithm and its applications.

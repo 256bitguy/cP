@@ -1,0 +1,26 @@
+Here are 10 questions related to the Euclidean Algorithm for finding the greatest common divisor (GCD), ranging from basic to more challenging. These questions are designed to help you practice and deepen your understanding of the topic.
+
+Basic Questions:
+
+1.Find the GCD of 24 and 18 using the Euclidean Algorithm.
+2.Determine the GCD of 35 and 70 using the Euclidean Algorithm.
+3.Calculate the GCD of 14 and 28 using the recursive version of the Euclidean Algorithm.
+4.What is the GCD of 0 and 15? Does the Euclidean Algorithm work for this case?
+5.Explain the step-by-step process of the Euclidean Algorithm for finding the GCD of two numbers.
+
+Intermediate Questions:
+
+1.Write a C++ function that implements the Euclidean Algorithm for finding the GCD of two numbers and use it to find the GCD of 63 and 84.
+2.Use the extended Euclidean Algorithm to find the coefficients x and y for Bézout's identity for the numbers 48 and 18.
+3.Determine the GCD of 12345 and 54321 using the Euclidean Algorithm. How many iterations are required?
+4.Explain how the Euclidean Algorithm can be used to simplify fractions, and provide an example.
+5.Find the GCD of 123456789 and 987654321 using the Euclidean Algorithm. Is there a more efficient way to do this?
+
+Challenging Questions:
+
+1.Extend the Euclidean Algorithm to find the GCD of more than two numbers (e.g., GCD of three or more numbers). Describe the approach.
+2.Develop a C++ function to solve Diophantine equations (ax + by = c) using the extended Euclidean Algorithm and use it to find a solution for 21x + 35y = 7.
+3.Investigate the time complexity of the Euclidean Algorithm and compare it with other GCD-finding methods for large numbers.
+4.Explain the relationship between the Euclidean Algorithm and the Fundamental Theorem of Arithmetic. How does it relate to prime factorization?
+5.Explore applications of the Euclidean Algorithm in computer science, cryptography, or real-world problems and provide an example of its use.
+These questions cover a range of difficulty levels and applications of the Euclidean Algorithm. Practicing them will help you become more proficient in applying this algorithm and understanding its broader significance in mathematics and computer science.

@@ -1,0 +1,24 @@
+Here are ten questions related to the Sieve of Eratosthenes, categorized into basic, intermediate, and advanced levels for practice:
+
+Basic Level:
+
+Write a C++ program to find all prime numbers up to 50 using the Sieve of Eratosthenes.
+Create a function to check whether a given number 'n' is prime or not, using the Sieve of Eratosthenes.
+Implement a C++ program to find the 10th prime number using the Sieve of Eratosthenes.
+Write a program to determine if a given number 'n' is a prime number using trial division.
+Calculate the sum of all prime numbers up to 100 using the Sieve of Eratosthenes.
+Intermediate Level:
+
+Develop a C++ program to find all prime numbers in a specified range [m, n] using the Sieve of Eratosthenes.
+Implement a function in C++ to count the total number of prime numbers up to a given limit using the Sieve of Eratosthenes.
+Write a program to find the largest prime number less than 1,000 using the Sieve of Eratosthenes.
+Create a C++ program that lists all twin prime pairs (consecutive prime numbers with a difference of 2) up to 500.
+Implement a program to find the smallest prime number with 'k' digits using the Sieve of Eratosthenes.
+Advanced Level:
+
+Write a C++ program to find all prime numbers in the Fibonacci sequence up to a specified limit using the Sieve of Eratosthenes.
+Implement the Sieve of Eratosthenes with segmented sieving to find prime numbers in a large range [m, n].
+Develop a program that generates the first 'n' prime numbers using the Sieve of Eratosthenes.
+Create a C++ program to find the prime factorization of a given number using the Sieve of Eratosthenes.
+Implement the Sieve of Eratosthenes with an optimization like the "wheel factorization" technique for even more efficient prime number finding.
+These questions cover a wide range of challenges related to prime numbers and the Sieve of Eratosthenes, from basic operations to more advanced techniques and optimizations.

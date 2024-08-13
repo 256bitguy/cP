@@ -1,0 +1,72 @@
+Basic Level:
+
+Check if 'n' is Prime using Trial Division:
+
+Write a function that takes an integer 'n' as input.
+If 'n' is less than or equal to 1, return 'false' as it's not prime.
+If 'n' is 2 or 3, return 'true' as it's prime.
+Check if 'n' is divisible by any integer from 2 up to the square root of 'n'. If any divisor is found, return 'false'; otherwise, return 'true.'
+Primality Testing with Sieve of Eratosthenes:
+
+Implement the Sieve of Eratosthenes to generate prime numbers up to a reasonable limit.
+Check if 'n' is present in the list of prime numbers.
+Fermat Primality Test for 17:
+
+Implement the Fermat primality test using 'a = 2' for the number 'n = 17'.
+Calculate a^(n-1) % n.
+If the result is 1, 'n' is probably prime; otherwise, it's not prime.
+Determine if 'n' is a Carmichael Number:
+
+Create a list of known Carmichael numbers.
+Check if 'n' is in the list to determine if it's a Carmichael number.
+Miller-Rabin Primality Test for [10, 50]:
+
+Implement the Miller-Rabin primality test for numbers in the range [10, 50].
+Check if each number is prime using the specified number of iterations.
+Intermediate Level:
+
+Find the 50th Prime Number using Trial Division:
+
+Write a loop to increment numbers starting from 2.
+Use the trial division method to check the primality of each number.
+Keep counting prime numbers until you reach the 50th prime.
+Miller-Rabin Primality Test for 563:
+
+Implement the Miller-Rabin primality test with 10 iterations for the number 563.
+Determine if 563 is prime or not.
+Find the Smallest Sophie Germain Prime:
+
+Write a loop to increment numbers starting from 101.
+For each number, check if it and '2 * number + 1' are both prime.
+The first such number is the smallest Sophie Germain prime.
+Check if 8191 is a Mersenne Prime:
+
+Implement the Lucas-Lehmer test for Mersenne primes.
+Calculate and check the sequence for Mersenne prime with exponent 13 (2^13 - 1).
+Baillie-PSW Primality Test for 29341:
+
+Implement the Baillie-PSW primality test for the number 29341.
+Check if 29341 is prime or not.
+Advanced Level:
+
+AKS Primality Test for 1,000,003:
+
+Implement the AKS primality test for the number 1,000,003.
+Check if 1,000,003 is prime or not using this deterministic test.
+Fermat Number F12 Primality Test:
+
+Implement the Fermat primality test for the Fermat number F12.
+Determine if F12 is prime.
+Primality Test with Elliptic Curves:
+
+Implement a primality test based on elliptic curves.
+Use this test to check the primality of a large number.
+Primality Test for RSA-2048 Number:
+
+Develop a program to test the primality of the RSA-2048 number (a large semiprime).
+Utilize an efficient primality testing algorithm for this purpose.
+Elliptic Curve Primality Test:
+
+Implement the elliptic curve primality test.
+Use this method to determine the primality of a given number.
+These steps should guide you through solving each of the questions related to primality testing, from basic techniques to more advanced algorithms.

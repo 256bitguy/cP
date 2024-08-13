@@ -1,0 +1,63 @@
+Lesson: Sieve of Eratosthenes
+1. Introduction
+The Sieve of Eratosthenes is an ancient and efficient algorithm for finding all prime numbers up to a specified limit. 
+It was developed by the Greek mathematician Eratosthenes around 240 BCE. The algorithm is a fundamental tool in number theory 
+and is used for various applications, including cryptography and prime number generation.
+
+2. Algorithm
+The Sieve of Eratosthenes works as follows:
+
+Start with a list of integers from 2 to the specified limit.
+Begin with the first unmarked number (2).
+Mark all multiples of that number (2) as composite.
+Move to the next unmarked number (3), which is the next prime.
+Mark all multiples of 3 as composite.
+Continue this process for each unmarked number, marking its multiples.
+The unmarked numbers that remain are prime numbers.
+3. Implementation
+Here's a step-by-step implementation of the Sieve of Eratosthenes in C++:
+
+cpp
+Copy code
+#include <iostream>
+#include <vector>
+
+void sieveOfEratosthenes(int limit) {
+    std::vector<bool> isPrime(limit + 1, true);
+
+    for (int p = 2; p * p <= limit; p++) {
+        if (isPrime[p]) {
+            for (int i = p * p; i <= limit; i += p) {
+                isPrime[i] = false;
+            }
+        }
+    }
+
+    // Print the prime numbers
+    for (int p = 2; p <= limit; p++) {
+        if (isPrime[p]) {
+            std::cout << p << " ";
+        }
+    }
+    std::cout << std::endl;
+}
+
+int main() {
+    int limit = 30; // Specify the limit to find primes up to 30
+    sieveOfEratosthenes(limit);
+    return 0;
+}
+4. Complexity
+The Sieve of Eratosthenes has a time complexity of approximately O(n*log(log(n))), where 'n' is the specified limit.
+The space complexity is O(n) due to the boolean array used to mark numbers.
+5. Examples
+Example 1: Finding Primes Up to 30
+
+When you run the code above with a limit of 30, it will output the prime numbers up to 30: 2 3 5 7 11 13 17 19 23 29.
+
+Example 2: Large Primes
+
+The Sieve of Eratosthenes can efficiently find large prime numbers, making it a crucial tool in prime number generation and cryptography.
+
+6. Conclusion
+The Sieve of Eratosthenes is a classic and efficient algorithm for finding prime numbers. Its simplicity and effectiveness have made it a valuable tool for various mathematical and computational applications. Understanding how to implement and use the algorithm is important for working with prime numbers and solving related problems.

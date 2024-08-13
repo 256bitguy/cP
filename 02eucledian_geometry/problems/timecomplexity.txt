@@ -1,0 +1,37 @@
+Basic Questions:
+
+Finding the GCD of two numbers using the Euclidean Algorithm has a time complexity of O(log(min(a, b))) where "a" and "b" are the input numbers. In practice, the algorithm is highly efficient and runs in a small number of iterations.
+
+Similarly, finding the GCD of two numbers using the Euclidean Algorithm also has a time complexity of O(log(min(a, b))).
+
+The recursive version of the Euclidean Algorithm also has a time complexity of O(log(min(a, b))) due to its iterative nature.
+
+Determining the GCD of 0 and any positive number "b" using the Euclidean Algorithm has a time complexity of O(1), as it involves a single check.
+
+Explaining the step-by-step process of the Euclidean Algorithm is not a computational problem, so it doesn't have a time complexity.
+
+Intermediate Questions:
+
+Writing a C++ function for the Euclidean Algorithm to find the GCD of two numbers has a time complexity of O(log(min(a, b))). Finding the GCD of 63 and 84 using this function also has a time complexity of O(log(min(63, 84))).
+
+Using the extended Euclidean Algorithm to find the coefficients "x" and "y" for Bézout's identity for two numbers "a" and "b" has the same time complexity as finding the GCD, which is O(log(min(a, b))).
+
+Determining the GCD of 12345 and 54321 using the Euclidean Algorithm still has a time complexity of O(log(min(12345, 54321))), but the actual number of iterations may be relatively larger compared to smaller numbers.
+
+Explaining how the Euclidean Algorithm can be used to simplify fractions doesn't involve computation or time complexity.
+
+Finding the GCD of 123456789 and 987654321 with the Euclidean Algorithm still has a time complexity of O(log(min(123456789, 987654321))). The algorithm is efficient for large numbers, but the actual time may vary.
+
+Challenging Questions:
+
+Extending the Euclidean Algorithm to find the GCD of more than two numbers depends on the number of input values. If there are "n" numbers, it may involve "n-1" pairwise GCD calculations, each with a time complexity of O(log(min(a, b))).
+
+Developing a C++ function to solve Diophantine equations using the extended Euclidean Algorithm has a time complexity similar to the GCD calculation, which is O(log(min(a, b))). Solving the equation 21x + 35y = 7 with this method also has a time complexity of O(log(min(21, 35))).
+
+Investigating the time complexity of the Euclidean Algorithm and comparing it with other GCD-finding methods usually involves theoretical analysis rather than direct computation. The Euclidean Algorithm's time complexity is O(log(min(a, b)), and other methods may vary.
+
+Explaining the relationship between the Euclidean Algorithm and the Fundamental Theorem of Arithmetic doesn't involve computational time complexity.
+
+Exploring applications of the Euclidean Algorithm in computer science, cryptography, or real-world problems may involve various complexities depending on the specific application and its implementation. The time complexity would need to be determined on a case-by-case basis. For example, in RSA cryptography, the time complexity depends on the key size and other factors.
+
+In summary, the time complexity of the Euclidean Algorithm for finding the GCD is primarily determined by the number of iterations required, which is typically O(log(min(a, b))). However, in more complex problems and applications, the time complexity may depend on the specific details of the problem and its implementation.

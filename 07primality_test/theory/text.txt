@@ -1,0 +1,131 @@
+Lesson: Primality Testing
+1. Introduction
+Primality Testing is a fundamental topic in number theory and computer science. It involves determining whether
+ a given positive integer is prime (i.e., divisible by only 1 and itself) or composite (divisible by numbers other
+  than 1 and itself). Prime numbers play a crucial role in various fields, including cryptography, algorithms, and number theory.
+
+2. Importance
+Understanding Primality Testing is essential for several reasons:
+
+Cryptography: Many encryption algorithms rely on large prime numbers, making it necessary to test the primality of 
+such numbers to ensure the security of communications.
+
+Algorithms: Prime numbers are used in algorithms and data structures for tasks like hashing, factorization, and finding
+ solutions to various mathematical problems.
+
+Efficiency: Primality testing helps in optimizing algorithms by eliminating the need to factorize numbers to check their primality.
+
+3. Primality Testing Techniques
+There are several techniques for primality testing, ranging from basic to advanced:
+
+Trial Division: The simplest method is to divide the number by all integers less than itself and check for any divisors.
+
+Fermat Primality Test: This test is based on Fermat's Little Theorem, which states that if 'p' is prime, then a^(p-1) ≡ 1 (mod p) 
+for any 'a' not divisible by 'p.' The test checks if a^(p-1) ≡ 1 (mod p) for a random 'a.'
+
+Miller-Rabin Primality Test: This probabilistic test is widely used and can determine primality with high confidence. It repeatedly
+ applies modular exponentiation for different 'a' values.
+
+Solovay-Strassen Primality Test: Similar to the Miller-Rabin test, it uses Euler's criterion to check primality.
+
+AKS Primality Test: This deterministic test determines whether a number is prime in polynomial time, but it's not commonly used due
+ - to its complexity.
+
+4. Code Examples
+Example 1: Trial Division in C++
+
+cpp
+Copy code
+#include <iostream>
+
+bool isPrime(int n) {
+    if (n <= 1) return false;
+    if (n <= 3) return true;
+    if (n % 2 == 0 || n % 3 == 0) return false;
+
+    for (int i = 5; i * i <= n; i += 6) {
+        if (n % i == 0 || n % (i + 2) == 0) return false;
+    }
+
+    return true;
+}
+
+int main() {
+    int num = 17; // Change to the number you want to test
+    bool result = isPrime(num);
+    
+    if (result) {
+        std::cout << num << " is prime." << std::endl;
+    } else {
+        std::cout << num << " is composite." << std::endl;
+    }
+
+    return 0;
+}
+Example 2: Miller-Rabin Primality Test in C++
+
+cpp
+Copy code
+#include <iostream>
+#include <cstdlib>
+
+long long modPow(long long base, long long exp, long long mod) {
+    long long result = 1;
+    base = base % mod;
+
+    while (exp > 0) {
+        if (exp % 2 == 1) {
+            result = (result * base) % mod;
+        }
+        base = (base * base) % mod;
+        exp /= 2;
+    }
+    return result;
+}
+
+bool millerRabin(long long n, int k) {
+    if (n <= 1 || n == 4) return false;
+    if (n <= 3) return true;
+
+    int s = 0;
+    long long d = n - 1;
+    while (d % 2 == 0) {
+        d /= 2;
+        s++;
+    }
+
+    for (int i = 0; i < k; i++) {
+        long long a = 2 + rand() % (n - 3);
+        long long x = modPow(a, d, n);
+
+        if (x == 1 || x == n - 1) continue;
+
+        for (int r = 1; r < s; r++) {
+            x = modPow(x, 2, n);
+            if (x == 1) return false;
+            if (x == n - 1) break;
+        }
+
+        if (x != n - 1) return false;
+    }
+
+    return true;
+}
+
+int main() {
+    long long num = 17; // Change to the number you want to test
+    int iterations = 5; // Number of iterations for the Miller-Rabin test
+    bool result = millerRabin(num, iterations);
+
+    if (result) {
+        std::cout << num << " is probably prime." << std::endl;
+    } else {
+        std::cout << num << " is composite." << std::endl;
+    }
+
+    return 0;
+}
+5. Conclusion
+Primality testing is a fundamental concept with applications in various domains, particularly in cryptography
+ and algorithm design. Understanding the different techniques for primality testing and being able to implement them 
+ is crucial for solving mathematical and computational problems related to prime numbers.

@@ -1,0 +1,29 @@
+Here are ten coding problems related to Linear Diophantine Equations, ranging from basic to advanced levels:
+
+Basic Level:
+
+1.Write a C++ function to determine if a given Linear Diophantine Equation ax + by = c has integer solutions.
+
+2.Given a Linear Diophantine Equation ax + by = c, find one particular solution (x, y) when it exists.
+
+Intermediate Level:
+
+1.Write a C++ function to find all integer solutions to a given Linear Diophantine Equation ax + by = c.
+
+2.Given a Linear Diophantine Equation ax + by = c, find the general solution (x, y) in terms of parameters for all possible solutions.
+
+3.Solve the Linear Diophantine Equation 15x + 10y = 5 for integer values of x and y.
+
+Advanced Level:
+
+1.Write a C++ program to find the positive integer solutions (x, y) of the Linear Diophantine Equation 21x + 14y = 7.
+
+2.Given a Linear Diophantine Equation ax + by = c, find the total number of solutions for integer values of x and y.
+
+3.Solve the Linear Diophantine Equation 18x + 12y = 6 using an algorithm that minimizes the absolute values of x and y.
+
+4.Write a C++ function that can handle multiple Linear Diophantine Equations and solve them using a single function call.
+
+5.Find the general solution (x, y) for the Linear Diophantine Equation ax + by = c with specific constraints such as x > 0 and y > 0.
+
+These problems should provide a range of challenges for practicing Linear Diophantine Equations. The basic problems focus on foundational concepts, while the intermediate and advanced problems involve more complex scenarios and techniques for solving Diophantine Equations.

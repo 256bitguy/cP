@@ -1,0 +1,77 @@
+Here are steps to solve each of the ten Euler's Totient Function problems, categorized by level:
+
+Basic Level:
+
+Calculate φ(n):
+
+Write a C++ function that takes a positive integer 'n' as input.
+Implement the Euler's Totient Function algorithm to calculate φ(n).
+Return the result.
+φ(12) using Euler's Totient Function:
+
+Use the φ function to calculate φ(12) in C++.
+Output the result.
+Calculate φ(n) for a Range:
+
+Write a loop that iterates through values of 'n' from 1 to 10.
+For each 'n', use the Euler's Totient Function to calculate φ(n) and display the results.
+φ(n) for Prime Numbers:
+
+Write a C++ program to check if 'n' is prime.
+If 'n' is prime, calculate φ(n) using the formula φ(p) = p - 1.
+φ(36) using Euler's Totient Function:
+
+Calculate φ(36) by using the Euler's Totient Function algorithm in C++.
+Print the result.
+Intermediate Level:
+
+Sum of φ(k) for All 'k':
+
+Write a loop that iterates through values of 'k' from 1 to 'n'.
+For each 'k', calculate φ(k) and sum the values.
+Display the sum.
+Smallest 'n' with φ(n) = 12:
+
+Use a loop to increment 'n' from 1 and calculate φ(n) for each 'n'.
+When φ(n) equals 12, print the value of 'n' and break the loop.
+Calculate φ(mn) for Coprime 'm' and 'n':
+
+Write a function that takes 'm' and 'n' as input.
+Check if 'm' and 'n' are coprime.
+If coprime, calculate φ(mn) = φ(m) * φ(n).
+Calculate φ(420) using Euler's Totient Function:
+
+Calculate φ(420) using the Euler's Totient Function algorithm in C++.
+Display the result.
+φ(n) for Product of Two Primes:
+
+Write a program to find two distinct prime numbers, 'p' and 'q'.
+Calculate φ(n) where 'n' is the product of 'p' and 'q' using the formula φ(n) = (p - 1)(q - 1).
+Advanced Level:
+
+Sum of φ(n) for Perfect Square φ(n):
+
+Write a loop to increment 'n' from 1 and calculate φ(n) for each 'n'.
+Check if φ(n) is a perfect square.
+If it is, add 'n' to the sum.
+Smallest 'n' for Divisible φ(n):
+
+Write a loop to increment 'n' from 1.
+Calculate φ(n) for each 'n'.
+Check if φ(n) is divisible by 100.
+When found, print the smallest 'n' and break the loop.
+Calculate φ(1000) using Euler's Totient Function:
+
+Calculate φ(1000) using Euler's Totient Function in C++.
+Display the result.
+Find φ(2n) = φ(n) Numbers:
+
+Write a program to find positive integers 'n' such that φ(2n) = φ(n).
+Output the list of such integers.
+Largest 'n' with Prime φ(n):
+
+Write a loop to decrement 'n' from 1,000,000 to 1.
+Calculate φ(n) for each 'n'.
+Check if φ(n) is prime.
+When found, print the largest 'n' and break the loop.
+These steps should guide you in solving each of the Euler's Totient Function problems, from basic calculations to more advanced applications.

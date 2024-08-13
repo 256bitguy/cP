@@ -1,0 +1,24 @@
+Here are ten questions related to primality testing, categorized into basic, intermediate, and advanced levels for practicing:
+
+Basic Level:
+
+Write a C++ program to check if a given number 'n' is prime using trial division.
+Create a function to check whether a number 'n' is prime or not using the Sieve of Eratosthenes.
+Implement a program that checks whether 17 is prime or not using the Fermat primality test.
+Write a C++ program to determine if a given number 'n' is a Carmichael number.
+Calculate and print the prime numbers in the range [10, 50] using the Miller-Rabin primality test.
+Intermediate Level:
+
+Develop a program in C++ to find the 50th prime number using trial division.
+Implement a Miller-Rabin primality test with 10 iterations to check if 563 is prime or not.
+Create a program to find the smallest Sophie Germain prime greater than 100.
+Write a C++ program to determine if 8191 is a Mersenne prime using the Lucas-Lehmer test.
+Implement the Baillie-PSW primality test in C++ to check if 29341 is prime or not.
+Advanced Level:
+
+Develop a C++ program that uses the AKS primality test to check if 1,000,003 is prime.
+Create a program that checks the primality of the Fermat number F12 = 2^(2^12) + 1.
+Implement a deterministic primality test for large numbers using elliptic curves.
+Write a program in C++ to check the primality of the RSA-2048 number (a 617-digit semiprime).
+Develop a C++ program to test primality by implementing the elliptic curve primality test.
+These questions cover a wide range of challenges related to primality testing, from basic techniques like trial division to more advanced algorithms such as the AKS primality test and elliptic curve primality testing.

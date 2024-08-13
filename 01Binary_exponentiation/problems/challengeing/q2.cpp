@@ -1,0 +1,2 @@
+/*
+Binary exponentiation is not typically used to find the GCD. You would use the Euclidean algorithm to find the GCD efficiently.*/

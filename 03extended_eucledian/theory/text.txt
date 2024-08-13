@@ -1,0 +1,82 @@
+ Here's a complete lesson on the Extended Euclidean Algorithm, which is used to find Bézout's coefficients and the
+  multiplicative modular inverse, along with step-by-step explanations and examples.
+
+Lesson: The Extended Euclidean Algorithm
+1. Introduction
+The Extended Euclidean Algorithm is an extension of the standard Euclidean Algorithm for finding the greatest common divisor (GCD) of 
+two numbers. In addition to finding the GCD, it also computes Bézout's coefficients, which are integers "x" and "y" that satisfy
+ Bézout's identity: ax + by = gcd(a, b).
+
+This algorithm is essential in number theory, modular arithmetic, cryptography, and solving linear Diophantine equations.
+
+2. Basic Understanding
+To get started, let's establish some foundational concepts:
+
+Bézout's Identity: Bézout's identity states that for any two integers "a" and "b," there exist integers "x" and "y" such that 
+ax + by = gcd(a, b). The Extended Euclidean Algorithm helps find these coefficients.
+
+Greatest Common Divisor (GCD): The GCD of two integers "a" and "b" is the largest positive integer that divides both "a" and "b" 
+without leaving a remainder. It plays a significant role in number theory and has numerous applications.
+
+Modular Inverse: The Extended Euclidean Algorithm can also be used to find the modular multiplicative inverse of an integer "a"
+ modulo "m." This is an integer "x" such that ax ≡ 1 (mod m).
+
+3. Step-by-Step Algorithm
+Let's walk through the Extended Euclidean Algorithm:
+
+Step 1: Start with two integers "a" and "b," where "a" is larger than "b."
+
+Step 2: Use the standard Euclidean Algorithm to find the GCD of "a" and "b."
+
+Step 3: Perform the standard Euclidean Algorithm until the remainder becomes zero.
+
+Step 4: Work backward to find "x" and "y."
+
+Step 5: The last non-zero remainder is the GCD, and the coefficients "x" and "y" are the Bézout's coefficients.
+
+4. Using the Algorithm
+Example 1: Find the GCD of 48 and 18 using the Extended Euclidean Algorithm.
+
+Use the standard Euclidean Algorithm to find the GCD:
+GCD(48, 18) = 6
+
+Work backward:
+
+Write the division steps:
+48 = 18 * 2 + 12
+18 = 12 * 1 + 6
+12 = 6 * 2 + 0
+Work backward to find "x" and "y" by starting with 0 and 1:
+For GCD(48, 18), x = 0, y = 1
+For GCD(18, 12), x = 1, y = -2
+For GCD(12, 6), x = -2, y = 5
+For GCD(6, 0), x = 5, y = -14
+The coefficients "x" and "y" for GCD(48, 18) are 5 and -14, respectively.
+
+Example 2: Find the modular multiplicative inverse of 3 modulo 11 using the Extended Euclidean Algorithm.
+
+Use the Extended Euclidean Algorithm to find the GCD and coefficients:
+
+scss
+Copy code
+GCD(3, 11) = 1
+Coefficients: x = 4, y = -1
+Adjust the coefficients for a positive value within the modulo:
+
+arduino
+Copy code
+In this case, x = 4.
+The modular multiplicative inverse of 3 modulo 11 is 4, as 3 * 4 ≡ 1 (mod 11).
+
+5. Time Complexity
+The time complexity of the Extended Euclidean Algorithm is O(log(min(a, b))), just like the standard Euclidean Algorithm.
+ It efficiently finds the GCD and coefficients for relatively large integers.
+
+6. Applications
+The Extended Euclidean Algorithm is widely used in cryptography, modular arithmetic, solving linear Diophantine equations, 
+and calculating modular inverses, making it a crucial tool in computer science and number theory.
+
+7. Conclusion
+The Extended Euclidean Algorithm is a powerful tool for finding Bézout's coefficients, the modular multiplicative inverse,
+ and solving linear Diophantine equations. It plays a significant role in various mathematical 
+and computational applications, making it a fundamental concept to understand in mathematics and computer science.

@@ -1,0 +1,100 @@
+Here's a complete lesson on Integer Factorization for Competitive Programming, covering the definition, importance, techniques,
+ and code examples.
+
+Lesson: Integer Factorization for Competitive Programming
+1. Introduction
+Integer Factorization is a crucial concept in competitive programming and number theory. It involves breaking down a positive 
+integer into its prime factors, which are the prime numbers that multiply together to give the original integer. Factorization 
+is used in various mathematical and computational problems, including cryptography, optimization, and algorithms.
+
+2. Importance
+Understanding Integer Factorization is vital for competitive programming for several reasons:
+
+Cryptography: Many encryption and security systems rely on the difficulty of factorizing large composite numbers. Knowledge of 
+factorization is essential for cryptographic analysis.
+
+Algorithms: Factorization is used in various algorithms, such as finding the greatest common divisor (GCD) of two numbers or
+ solving linear Diophantine equations.
+
+Optimization: Factorization can be used to simplify expressions, find divisors, and optimize algorithms.
+
+3. Factorization Techniques
+Several techniques are commonly used for integer factorization:
+
+Trial Division: The simplest method is to check for divisibility by each prime number up to the square root of the target integer.
+
+Pollard's Rho Algorithm: A randomized algorithm that finds factors using cycle detection in a sequence of numbers.
+
+Fermat's Factorization Method: Based on the representation of odd integers as the difference of two squares. It is efficient for
+ numbers that are products of two primes.
+
+Pollard's p-1 Algorithm: An extension of Pollard's Rho Algorithm that is useful for numbers with one large prime factor.
+
+Quadratic Sieve: A general-purpose factorization algorithm that uses quadratic polynomials to find factors.
+
+Elliptic Curve Method (ECM): A factorization method that employs elliptic curves to factorize integers.
+
+4. Code Examples
+Example 1: Trial Division in C++
+
+cpp
+Copy code
+#include <iostream>
+#include <vector>
+
+std::vector<int> trialDivision(int n) {
+    std::vector<int> factors;
+    for (int i = 2; i * i <= n; i++) {
+        while (n % i == 0) {
+            factors.push_back(i);
+            n /= i;
+        }
+    }
+    if (n > 1) {
+        factors.push_back(n);
+    }
+    return factors;
+}
+
+int main() {
+    int num = 56; // Change to the number you want to factorize
+    std::vector<int> factors = trialDivision(num);
+    std::cout << "Prime factors of " << num << ": ";
+    for (int factor : factors) {
+        std::cout << factor << " ";
+    }
+    std::cout << std::endl;
+    return 0;
+}
+Example 2: Pollard's Rho Algorithm in C++
+
+cpp
+Copy code
+#include <iostream>
+#include <cstdlib>
+
+long long gcd(long long a, long long b) {
+    if (b == 0) return a;
+    return gcd(b, a % b);
+}
+
+long long pollardRho(long long n) {
+    long long x = 2, y = 2, d = 1;
+    while (d == 1) {
+        x = (x * x + 1) % n;
+        y = ((y * y + 1) % n * y + 1) % n;
+        d = gcd(std::abs(x - y), n);
+    }
+    return d;
+}
+
+int main() {
+    long long num = 5959; // Change to the number you want to factorize
+    long long factor = pollardRho(num);
+    std::cout << "A non-trivial factor of " << num << ": " << factor << std::endl;
+    return 0;
+}
+5. Conclusion
+Integer factorization is a vital skill in competitive programming, as it forms the basis for solving numerous problems, including
+ those related to cryptography and number theory. By understanding various factorization techniques and practicing their 
+ implementation, you can enhance your problem-solving capabilities in competitive programming.

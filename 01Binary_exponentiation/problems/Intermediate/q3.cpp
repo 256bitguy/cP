@@ -1,0 +1,3 @@
+/*
+Modular exponentiation is a special case of binary exponentiation. It's used in cryptography to efficiently calculate (base^exponent) % modulus, where all three values are large integers. This is important in cryptographic algorithms like RSA, where modular exponentiation is used to encrypt and decrypt messages securely. 
+It ensures that the results are within a specified range, which is crucial for cryptographic operations.*/

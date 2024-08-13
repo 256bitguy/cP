@@ -1,0 +1,23 @@
+Basic Level:
+
+Write a C++ program to print the first 15 Fibonacci numbers.
+Create a function that takes an integer 'n' as input and prints the first 'n' Fibonacci numbers.
+Write a C++ program to calculate and print the sum of the first 20 Fibonacci numbers.
+Implement a function that, given an integer 'n,' returns the nth Fibonacci number.
+Create a C++ program to check whether a given number is a Fibonacci number or not.
+Intermediate Level:
+
+Write a C++ program to generate and print the Fibonacci sequence up to a user-specified term 'n' using an iterative approach.
+Implement a recursive function in C++ to find the nth Fibonacci number.
+Write a program that calculates and prints the product of the first 12 Fibonacci numbers.
+Create a C++ program to find the largest Fibonacci number less than or equal to 1,000.
+Implement a function that calculates the average of the first 'n' Fibonacci numbers using C++.
+Challenging Level:
+
+Write a C++ program to calculate the last three digits of the 1,000th Fibonacci number using matrix exponentiation.
+Create a C++ program to find the smallest Fibonacci number with 'k' digits, where 'k' is provided as input.
+Implement a C++ program to generate the Fibonacci sequence modulo 'm' for a given large 'm,' where 'm' is an input parameter.
+Create a C++ program that efficiently calculates and prints the Fibonacci sequence using an optimized approach, such as memoization.
+Write a C++ program to find the nth Fibonacci number using an approach that minimizes time and space complexity.
+These questions provide a comprehensive range of challenges related to Fibonacci numbers, from basic calculations to more advanced 
+techniques for optimizing Fibonacci number generation and handling large Fibonacci numbers.  

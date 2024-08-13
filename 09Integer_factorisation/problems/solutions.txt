@@ -1,0 +1,75 @@
+Basic Level:
+
+Find Prime Factors of an Integer:
+
+Write a function that takes an integer as input.
+Use trial division to check divisibility by prime numbers up to the square root of the integer.
+If a prime divisor is found, add it to a list of factors.
+Repeat the process until the integer becomes 1.
+Number of Divisors:
+
+Implement a function that takes an integer as input.
+Factorize the integer using trial division to find its prime factors and their counts.
+Calculate the number of divisors as the product of one more than each prime factor's count.
+Check for Perfect Square:
+
+Write a function that takes an integer as input.
+Calculate the square root of the integer.
+If the square root is an integer (without a fractional part), the input is a perfect square.
+Calculate LCM Using Prime Factorization:
+
+Implement a function that takes two integers as input.
+Factorize both integers into prime factors and their counts.
+Calculate the LCM by taking the product of all unique prime factors raised to their maximum counts.
+Calculate GCD Using Prime Factorization:
+
+Write a function that takes two integers as input.
+Factorize both integers into prime factors and their counts.
+Calculate the GCD by finding common prime factors with their minimum counts.
+Intermediate Level:
+
+Find Smallest Prime Factor:
+
+Create a function that takes an integer as input.
+Implement trial division to find the smallest prime factor of the integer.
+Return the result.
+Euler's Totient Function (Phi):
+
+Develop a function that takes an integer 'n' as input.
+Factorize 'n' to find its prime factors.
+Calculate Phi(n) by multiplying (1 - 1/p) for each prime factor 'p' occurring in the factorization.
+Check for Semiprime:
+
+Write a function that takes an integer as input.
+Factorize the integer to find its prime factors.
+Check if the number of prime factors is exactly two.
+Factorize Large Composite Number:
+
+Implement a sophisticated factorization algorithm like Pollard's Rho or Quadratic Sieve.
+Use the algorithm to factorize the large composite number and print the prime factors.
+Factorize Large Semiprime:
+
+Implement a more advanced factorization algorithm such as the Number Field Sieve (NFS).
+Use the algorithm to factorize a large semiprime number like RSA-2048 or RSA-4096.
+Advanced Level:
+
+Factorize Large Composite Using Pollard's Rho:
+
+Implement Pollard's Rho algorithm to factorize the large composite number.
+Use randomized techniques to find non-trivial factors efficiently.
+Factorize Large Composite Using Elliptic Curve Method (ECM):
+
+Implement the Elliptic Curve Method to factorize the large composite number.
+Utilize elliptic curves and number theory for factorization.
+Factorize Large Composite Using Quadratic Sieve (QS):
+
+Implement the Quadratic Sieve (QS) algorithm to factorize the large composite number.
+Utilize quadratic polynomials for efficient factorization.
+Factorize Large Composite Using Number Field Sieve (NFS):
+
+Implement the Number Field Sieve (NFS) algorithm for advanced factorization.
+Apply number theory techniques to factorize large composite numbers.
+Factorize Large Semiprime (e.g., RSA-4096):
+
+Implement a highly efficient factorization algorithm like NFS to factorize a large semiprime number such as RSA-4096.
+These steps provide guidance for solving each of the integer factorization problems, from basic operations to advanced factorization algorithms used in competitive programming.

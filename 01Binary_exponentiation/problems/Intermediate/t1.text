@@ -1,0 +1,23 @@
+#include <iostream>
+
+long long binaryExponentiation(long long base, long long exponent) {
+    long long result = 1;
+    while (exponent > 0) {
+        if (exponent % 2 == 1) {
+            result *= base;
+        }
+        base *= base; // Square the base
+        exponent /= 2; // Divide the exponent by 2
+    }
+    return result;
+}
+
+int main() {
+    long long base = 7;
+    long long exponent = 12;
+
+    long long result = binaryExponentiation(base, exponent);
+
+    std::cout << base << "^" << exponent << " = " << result << std::endl;
+    return 0;
+}

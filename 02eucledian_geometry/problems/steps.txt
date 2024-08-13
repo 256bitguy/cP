@@ -1,0 +1,60 @@
+Basic Questions:
+
+Find the GCD of 24 and 18 using the Euclidean Algorithm:
+
+Start with the larger number (24) and the smaller number (18).
+Divide 24 by 18 to get a quotient of 1 and a remainder of 6.
+Replace 24 with 18 and 18 with 6, and repeat the division.
+Continue until the remainder becomes 0. The GCD is the last non-zero remainder, which is 6.
+Determine the GCD of 35 and 70 using the Euclidean Algorithm:
+
+Start with the larger number (70) and the smaller number (35).
+Divide 70 by 35 to get a quotient of 2 and a remainder of 0.
+The GCD is the last non-zero remainder, which is 35.
+Calculate the GCD of 14 and 28 using the recursive version of the Euclidean Algorithm:
+
+Use the recursive function, which repeatedly replaces the larger number with the remainder until the remainder becomes 0.
+gcd(14, 28) = gcd(28, 14) = gcd(14, 14) = 14.
+What is the GCD of 0 and 15? Does the Euclidean Algorithm work for this case?
+
+The GCD of 0 and any positive number b is b. The Euclidean Algorithm works for this case and returns b as the GCD.
+Explain the step-by-step process of the Euclidean Algorithm for finding the GCD of two numbers:
+
+Start with two positive integers, a and b.
+Divide the larger number by the smaller number, obtaining a quotient and a remainder.
+Replace the larger number with the smaller number and the smaller number with the remainder.
+Repeat the process until the remainder becomes 0. The GCD is the last non-zero remainder.
+Intermediate Questions:
+
+Write a C++ function that implements the Euclidean Algorithm for finding the GCD of two numbers and use it to find the GCD of 63 and 84.
+
+Implement a C++ function using a loop or recursion as demonstrated in the basic examples.
+Apply the function to find the GCD of 63 and 84, following the steps mentioned earlier.
+Use the extended Euclidean Algorithm to find the coefficients x and y for Bézout's identity for the numbers 48 and 18.
+
+Extend the Euclidean Algorithm to find x and y such that ax + by = gcd(a, b) for 48 and 18.
+Determine the GCD of 12345 and 54321 using the Euclidean Algorithm. How many iterations are required?
+
+Follow the steps of the Euclidean Algorithm to find the GCD of 12345 and 54321.
+Count the number of iterations required by keeping track of the divisions.
+Explain how the Euclidean Algorithm can be used to simplify fractions, and provide an example.
+
+Use the GCD obtained from the Euclidean Algorithm to simplify a fraction by dividing the numerator and denominator by the GCD.
+For example, if the GCD of 24 and 36 is 12, then 24/36 can be simplified to 2/3.
+Find the GCD of 123456789 and 987654321 using the Euclidean Algorithm. Is there a more efficient way to do this?
+
+Apply the Euclidean Algorithm to find the GCD of the two large numbers.
+You can investigate whether there are more efficient algorithms for computing GCD for very large numbers, but the Euclidean Algorithm is quite efficient.
+Challenging Questions:
+
+Extend the Euclidean Algorithm to find the GCD of more than two numbers (e.g., GCD of three or more numbers). Describe the approach.
+Implement a version of the Euclidean Algorithm that can handle multiple numbers. You can apply the algorithm iteratively to find the GCD of all the numbers.
+Develop a C++ function to solve Diophantine equations (ax + by = c) using the extended Euclidean Algorithm and use it to find a solution for 21x + 35y = 7.
+Implement an extended Euclidean Algorithm that returns the coefficients x and y for the Diophantine equation.
+Use this function to find a solution for the given equation.
+Investigate the time complexity of the Euclidean Algorithm and compare it with other GCD-finding methods for large numbers.
+Analyze the time complexity of the Euclidean Algorithm (usually O(log(min(a, b))) and compare it with alternative methods, like prime factorization.
+Explain the relationship between the Euclidean Algorithm and the Fundamental Theorem of Arithmetic. How does it relate to prime factorization?
+Describe how the Euclidean Algorithm's role in finding the GCD connects to prime factorization and the Fundamental Theorem of Arithmetic.
+Explore applications of the Euclidean Algorithm in computer science, cryptography, or real-world problems and provide an example of its use.
+Investigate how the Euclidean Algorithm is applied in various fields and provide an example of its practical use, such as RSA cryptography.

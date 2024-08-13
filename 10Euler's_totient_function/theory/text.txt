@@ -1,0 +1,98 @@
+Here's a complete lesson on Euler's Totient Function, covering the definition, properties, applications, and code examples in C++.
+
+Lesson: Euler's Totient Function
+1. Introduction
+Euler's Totient Function, often denoted as φ (phi), is a fundamental concept in number theory. It is used to determine the count of
+positive integers less than or equal to a given integer 'n' that are coprime (relatively prime) to 'n'. Euler's Totient Function has
+various applications in number theory, cryptography, and mathematics.
+
+2. Definition
+The Euler's Totient Function φ(n) for a positive integer 'n' is defined as the count of positive integers 'k' less than or equal to 
+
+'n' that are coprime to 'n'. In other words, φ(n) is the number of positive integers in the range [1, n] that share no common factors 
+(other than 1) with 'n'.
+
+3. Properties
+Euler's Totient Function exhibits several important properties:
+
+φ(1) = 1: The totient function of 1 is 1 because 1 is coprime only with itself.
+
+φ(p) = p - 1: If 'p' is a prime number, then φ(p) is equal to 'p - 1' because all positive integers less than 'p' (excluding 'p') 
+
+are coprime with 'p'.
+
+φ(p^k) = p^k - p^(k-1): For prime powers 'p^k', where 'k' is a positive integer, the totient function is given by this formula.
+
+φ(mn) = φ(m) * φ(n): For coprime integers 'm' and 'n', the totient function of their product 'mn' is equal to the product of their 
+
+totient functions.
+
+φ(pq) = (p - 1)(q - 1) for distinct primes 'p' and 'q'.
+
+4. Applications
+Euler's Totient Function is used in various applications, including:
+
+Cryptography: In RSA encryption, the totient function is used to compute the private key and for encryption/decryption operations.
+
+Reducing Fractions: φ(n) can be used to simplify fractions by reducing the numerator and denominator to their coprime form.
+
+Primitive Roots: φ(n) helps determine if a primitive root exists modulo 'n'.
+
+5. Code Examples in C++
+Example 1: Euler's Totient Function in C++
+
+cpp
+Copy code
+#include <iostream>
+
+int eulerTotient(int n) {
+    int result = n; // Initialize result with n
+
+    for (int p = 2; p * p <= n; p++) {
+        if (n % p == 0) {
+            while (n % p == 0) {
+                n /= p;
+            }
+            result -= result / p;
+        }
+    }
+
+    if (n > 1) {
+        result -= result / n;
+    }
+
+    return result;
+}
+
+int main() {
+    int n = 12; // Change to the number for which you want to calculate φ(n)
+    int phi = eulerTotient(n);
+    std::cout << "Euler's Totient function φ(" << n << ") = " << phi << std::endl;
+    return 0;
+}
+Example 2: Using φ in Reducing Fractions in C++
+
+cpp
+Copy code
+#include <iostream>
+
+int gcd(int a, int b) {
+    if (b == 0) return a;
+    return gcd(b, a % b);
+}
+
+void reduceFraction(int& numerator, int& denominator) {
+    int commonFactor = gcd(numerator, denominator);
+    numerator /= commonFactor;
+    denominator /= commonFactor;
+}
+
+
+
+int main() {
+    int numerator = 36, denominator = 48;
+    reduceFraction(numerator, denominator);
+    std::cout << "Reduced Fraction: " << numerator << "/" << denominator << std::endl;
+    return 0;
+}
+These code examples demonstrate how to calculate Euler's Totient Function and how it can be used to simplify fractions by reducing the numerator and denominator to their coprime form. The totient function can be applied in various mathematical and cryptographic contexts.

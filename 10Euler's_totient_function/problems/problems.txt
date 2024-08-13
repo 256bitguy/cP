@@ -1,0 +1,24 @@
+Here are ten problems related to Euler's Totient Function (φ), categorized into basic, intermediate, and advanced levels for practicing in C++:
+
+Basic Level:
+
+1.Write a C++ program to calculate φ(n) for a given positive integer 'n'.
+2.Find the value of φ(12) using Euler's Totient Function in C++.
+3.Calculate φ(n) for 'n' in the range [1, 10] and display the results.
+4.Determine φ(n) for 'n' where 'n' is a prime number using C++.
+5.Write a program that calculates φ(36) using Euler's Totient Function in C++.
+Intermediate Level:
+
+1.Develop a C++ program to find the sum of φ(k) for all 'k' from 1 to 'n'.
+2.Implement a program to find the smallest positive integer 'n' for which φ(n) = 12.
+3.Write a C++ program to calculate φ(mn) when 'm' and 'n' are coprime.
+4.Calculate φ(420) using Euler's Totient Function in C++.
+5.Create a program to find the value of φ(n) for 'n' where 'n' is a product of two distinct primes.
+Advanced Level:
+
+1.Develop a C++ program to find the sum of all values of 'n' for which φ(n) is a perfect square.
+2.Implement a program to find the smallest 'n' such that φ(n) is divisible by 100.
+3.Calculate φ(1000) using Euler's Totient Function in C++.
+4.Write a program to find all positive integers 'n' such that φ(2n) = φ(n).
+5.Develop a program to find the largest 'n' less than 1,000,000 for which φ(n) is prime.
+These problems cover a range of challenges related to Euler's Totient Function, from basic calculations to more advanced applications. They will help you practice and improve your understanding of this concept in C++.
